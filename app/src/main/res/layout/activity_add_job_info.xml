@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".Add_job_Info_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraintLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="727dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/sign_in_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="703dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_details"
+                    android:layout_width="303dp"
+                    android:layout_height="133dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:src="@drawable/buildings"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/Job_Tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_image_details"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/inputs_login"
+                    android:drawableStart="@drawable/edit_status"
+                    android:drawableLeft="@drawable/edit_status"
+                    android:hint="Enter Job Tittle"
+                    android:padding="5dp"
+                    android:textColor="@color/Black"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/Black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.461"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_image_details"></EditText>
+
+                <EditText
+                    android:id="@+id/company_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Job_Tittle"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/inputs_login"
+                    android:drawableStart="@drawable/edit_status"
+                    android:drawableLeft="@drawable/edit_status"
+                    android:hint="Enter company Name"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Job_Tittle"></EditText>
+
+                <EditText
+                    android:id="@+id/SkillsandRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/company_name"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/inputs_login"
+                    android:drawableStart="@drawable/edit_status"
+                    android:drawableLeft="@drawable/edit_status"
+                    android:hint="Enter Skills and Requirements"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.466"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/company_name"></EditText>
+
+                <EditText
+                    android:id="@+id/Job_Descrition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/SkillsandRequirements"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/inputs_login"
+                    android:drawableStart="@drawable/edit_status"
+                    android:drawableLeft="@drawable/edit_status"
+                    android:gravity="start"
+                    android:hint="Job Descrition"
+                    android:padding="5dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/SkillsandRequirements"
+                    tools:ignore="MissingConstraints"></EditText>
+
+                <EditText
+                    android:id="@+id/Salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Job_Descrition"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/inputs_login"
+                    android:drawableStart="@drawable/edit_status"
+                    android:drawableLeft="@drawable/edit_status"
+                    android:hint="Enter Salary Package "
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.52"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Job_Descrition">
+
+                </EditText>
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="235dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@+id/Salary"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="53dp"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="60dp"
+                    android:layout_marginBottom="108dp"
+                    android:background="@drawable/buttons"
+                    android:text="Post Job"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Salary"
+                    app:layout_constraintVertical_bias="0.312" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

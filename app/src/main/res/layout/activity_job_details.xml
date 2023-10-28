@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Job_Details_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraintLayout">
+
+
+    <TextView
+        android:id="@+id/Textview_details"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_details"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/us"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toEndOf="@+id/Textview_details"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/buttons"
+            android:backgroundTint="@color/button_color"
+            android:orientation="vertical"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Textview_details">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/job_header"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Friend_profile_image"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/us">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Friend_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Job Name"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Firend_user_Date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Company"
+                        android:textColor="@color/black"
+                        android:textSize="17dp">
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--   <TextView
+                   android:id="@+id/post_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:text="Job Desription"
+                   android:textSize="22dp"
+                   android:textColor="@color/white"
+                   android:layout_below="@id/LinearLayout1">
+               </TextView>  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/job_footer"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/SearchIconCar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/Search_Car_Info"
+                    android:layout_alignRight="@+id/Search_Car_Info"
+                    android:layout_alignBottom="@+id/Search_Car_Info"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="-4dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/reload">
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:id="@+id/dislike_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Posted Time"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/Salary"
+                    android:layout_width="263dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="15dp"
+                    android:text="Salary"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/job_description"
+            android:backgroundTint="@color/button_color"
+            android:orientation="vertical"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout1"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/job_description"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Friend_profile_imag"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pencil"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Friend_user_nam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Job Description"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/Firend_user_Dat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="Description in detail"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--   <TextView
+                   android:id="@+id/post_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:text="Job Desription"
+                   android:textSize="22dp"
+                   android:textColor="@color/white"
+                   android:layout_below="@id/LinearLayout1">
+               </TextView>  -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/LinearLayou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/job_description"
+            android:backgroundTint="@color/button_color"
+            android:orientation="vertical"
+            android:padding="3dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayout"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/job_description"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/Friend_profile_ima"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pencil"></de.hdodenhof.circleimageview.CircleImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Friend_user_na"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:text="Skills and Requirements"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/Firend_user_Da"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="detail"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--   <TextView
+                   android:id="@+id/post_image"
+                   android:layout_width="match_parent"
+                   android:layout_height="200dp"
+                   android:text="Job Desription"
+                   android:textSize="22dp"
+                   android:textColor="@color/white"
+                   android:layout_below="@id/LinearLayout1">
+               </TextView>  -->
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="137dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttons"
+            android:text="Save"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearLayou"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+        android:id="@+id/Apply"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+            android:layout_marginTop="50dp"
+        android:text="Apply Now"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toEndOf="@+id/Save"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayou"
+        app:layout_constraintVertical_bias="0.891" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

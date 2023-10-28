@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".Sign_Up_Activity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/constraintLayout"
+        android:layout_marginBottom="180dp"
+        android:layout_marginTop="180dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="410dp"
+            android:layout_marginBottom="180dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/sign_in_background"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/Email_Sign_In"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/inputs_login"
+                android:drawableStart="@drawable/phone"
+                android:hint="Phone"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/Blue"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/Password_Sign_In"
+                android:layout_below="@+id/Email_Sign_In"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_login"
+                android:drawableStart="@drawable/password"
+                android:hint="password"
+                android:inputType="numberPassword"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/Blue"
+                android:textColorHint="@color/black">
+
+            </EditText>
+
+                <Button
+                    android:id="@+id/Sign_In_button"
+                    android:layout_width="302dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Password_Sign_In"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginEnd="31dp"
+                    android:background="@drawable/s_button"
+                    android:text="Sign In"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:layout_constraintVertical_bias="0.891" />
+
+
+                <TextView
+                    android:id="@+id/Dont_ave_Account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Sign_In_button"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="47dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="56dp"
+                    android:text="Don't have account?Create"
+                    android:textColor="@color/grey"
+                    android:textColorHighlight="@color/Blue"
+                    android:textSize="20dp"
+                    android:textStyle="bold"></TextView>
+
+                <RadioGroup
+                    android:id="@+id/SignInRadioGroup"
+                    android:layout_width="273dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Dont_ave_Account"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/SignInUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:text="User"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/SignInAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="@color/white"
+                        android:text="Admin"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></RadioButton>
+
+                </RadioGroup>
+
+
+            <CheckBox
+                android:id="@+id/remember_me_chkb"
+                android:layout_below="@id/SignInRadioGroup"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="@color/white"
+                android:gravity="center_vertical"
+                android:text="Remember me"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

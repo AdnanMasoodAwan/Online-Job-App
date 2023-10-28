@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/Textview"
+        android:layout_width="341dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Your Search for the next dream job is over"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="301dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/buttons"
+        android:text="Start Searching"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Textview" />
+
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="128dp"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/a"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"></ImageView>
+
+    <ImageView
+        android:id="@+id/b"
+        android:layout_width="128dp"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/b"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/c"
+        android:layout_width="128dp"
+        android:layout_height="101dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/b"
+        app:layout_constraintTop_toBottomOf="@+id/button"></ImageView>
+
+    <ImageView
+        android:id="@+id/d"
+        android:layout_width="121dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/d"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/a"
+        android:layout_alignParentLeft="true"></ImageView>
+
+    <ImageView
+        android:id="@+id/e"
+        android:layout_width="121dp"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/e"
+        app:layout_constraintStart_toEndOf="@+id/d"
+        app:layout_constraintTop_toBottomOf="@+id/b"
+        android:layout_alignParentLeft="true"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/f"
+        android:layout_width="157dp"
+        android:layout_height="128dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"></ImageView>
+
+    <ImageView
+        android:id="@+id/g"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/g"
+        app:layout_constraintEnd_toStartOf="@+id/k"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/f"
+        app:layout_constraintTop_toBottomOf="@+id/e"></ImageView>
+
+    <ImageView
+        android:id="@+id/h"
+        android:layout_width="143dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/h"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/g"
+        app:layout_constraintTop_toBottomOf="@+id/c"
+        android:layout_alignParentLeft="true"></ImageView>
+
+    <ImageView
+        android:id="@+id/i"
+        android:layout_width="159dp"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/i"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/f"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_alignParentLeft="true"></ImageView>
+
+    <ImageView
+        android:id="@+id/j"
+        android:layout_width="176dp"
+        android:layout_height="86dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/j"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/i"
+        app:layout_constraintTop_toBottomOf="@+id/g"
+        app:layout_constraintVertical_bias="1.0"></ImageView>
+
+    <ImageView
+        android:id="@+id/k"
+        android:layout_width="88dp"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/k"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/h"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_alignParentLeft="true"></ImageView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
